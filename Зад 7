@@ -1,9 +1,15 @@
 #include <iostream>
+#include <locale>
+#include <cstdlib>
 
 using namespace std;
 
 int main() {
+
+    setlocale(LC_ALL, "RUSSIAN");
+
     float a, b;
+    cout << "Введите число a и b \n";
     cin >> a >> b;
     cout << a / b;
     return 0;
